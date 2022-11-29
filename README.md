@@ -1,4 +1,4 @@
-# townsq-planos
+# TownSq Planos
 Um projeto com o objetivo de demonstrar os testes funcionais
 
 # Projeto para demonstrar testes funcionais
