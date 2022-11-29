@@ -40,7 +40,7 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 Realize um clone do projeto em seu computador
 
 ```
-git clone https://github.com/walexhenrique/lista-de-tarefas-cbv.git
+git clone https://github.com/walexhenrique/townsq-planos.git
 ```
 
 #### 2 - Passo: Ambiente virtual
