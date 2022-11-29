@@ -1,0 +1,75 @@
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #E2E2E2;
+}
+
+.green {
+    background: rgba(126,188,10,1);
+}
+
+.title {
+    padding: 4rem;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 128rem;
+    margin: 0 auto;
+}
+
+.container-content {
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    margin: .5rem 2rem;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+input {
+    width: 100%;
+    padding: .3rem;
+    border-radius: .3rem;
+    border: 0;
+}
+
+#submit {
+    display: block;
+    background-color: rgba(158,15,5,1);
+    color: white;
+    border: 0;
+    margin: 2rem auto;
+    width: 90%;
+    padding: 2rem 0;
+    border-radius: 1.8rem;
+    font-size: 2.4rem;
+}
+
+.errorlist {
+    list-style: none;
+    color: red;
+    padding: 0 0 0 1rem;
+}
+
+.message-success {
+    background: black;
+    color: #fff;
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#submit:hover {
+    cursor: pointer;
+}

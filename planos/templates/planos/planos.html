@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos TownSq</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'planos/css/styles.css' %}">
+    
+</head>
+<body>
+    <div class="container">
+        {% if messages %}
+                {% for message in messages %}
+                <div class="messages message-success">
+                    {{ message }}
+                </div>
+                {% endfor %}
+        {% endif %}
+        <section class='container-content'>
+            <div class="content">
+                <h1 class="green title">PREENCHA O FORMULÁRIO E RECEBA UMA DEMONSTRAÇÃO DO TOWNSQ</h1>
+                <form action="." method="post">
+                    {% csrf_token %}
+                    {% for field in form %}
+                    <div class="form-group">
+                        <label for="{{ field.id_for_label }}">
+                            {{field.label}}
+                        </label>
+                        <br>
+                        {{field}}
+                        {{ field.errors }}
+                    </div>
+                    {% endfor %}
+                    
+                    <button type="submit" id='submit'>QUERO CONHECER</button>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
+
